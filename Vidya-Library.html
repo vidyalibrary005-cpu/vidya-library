@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#252f87">
+    <title>Vidya Library | The Study Zone</title>
+    <link rel="stylesheet" href="./Vidya-Library.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="site-brand">
+            <div class="book-logo">📚</div>
+            <div>
+                <h1>विद्या लाइब्रेरी राजनांदगांव</h1>
+                <p>THE STUDY ZONE</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <div class="screenshot-hero">
+        <div class="hero-badge">📚 शांत माहौल · बेहतर पढ़ाई</div>
+
+        <h2>
+            आपकी मेहनत की जगह,<br>
+            <span>आपकी सफलता का रास्ता।</span>
+        </h2>
+
+        <p>
+            <b>Vidya Library Rajnandgaon – The Study Zone</b>
+            में अपनी सुविधा के अनुसार स्टडी स्लॉट चुनें और
+            अपनी तैयारी को नियमित बनाएँ।
+        </p>
+
+        <div class="hero-buttons">
+            <button class="hero-red" onclick="go('booking')">
+                🪑 स्टडी सीट बुक करें
+            </button>
+
+            <button class="hero-white" onclick="go('books')">
+                📚 किताबें देखें
+            </button>
+        </div>
+
+        <div class="library-card">
+            <div class="library-books">📚</div>
+            <h3>विद्या लाइब्रेरी</h3>
+            <p>The Study Zone</p>
+        </div>
+    </div>
+
+    <!-- HERO STATS -->
+    <div class="hero-stats">
+        <div class="hero-stat-card">
+            <strong>4–8 घंटे</strong>
+            <span>स्टडी स्लॉट</span>
+        </div>
+
+        <div class="hero-stat-card">
+            <strong>सुबह 6 – रात 10</strong>
+            <span>फुल टाइम / रिज़र्व्ड</span>
+        </div>
+
+        <div class="hero-stat-card deposit-card">
+            <strong>₹300</strong>
+            <span>रिफंडेबल सिक्योरिटी डिपॉजिट</span>
+        </div>
+    </div>
+
+    <main class="content">
+
+        <!-- HOME PAGE -->
+        <section class="page active" id="home">
+
+            <div class="section-head">
+                <h3>लाइब्रेरी एक नज़र में</h3>
+                <small>आपके लिए सुविधाएँ</small>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <div class="symbol">💺</div>
+                    <strong>80</strong>
+                    <span>कुल सीटें</span>
+                </div>
+
+                <div class="stat">
+                    <div class="symbol">🔐</div>
+                    <strong>24</strong>
+                    <span>कुल लॉकर</span>
+                </div>
+
+                <div class="stat">
+                    <div class="symbol">📚</div>
+                    <strong>16 घंटे</strong>
+                    <span>समय: 6 AM–10 PM</span>
+                </div>
+            </div>
+
+            <div class="section-head">
+                <h3>आप क्या करना चाहते हैं?</h3>
+            </div>
+
+            <div class="quick-grid">
+
+                <button class="quick" onclick="go('booking')">
+                    <span class="qicon">💺</span>
+                    <span>
+                        <strong>सीट बुकिंग</strong>
+                        <small>अपनी पसंद की सीट चुनें</small>
+                    </span>
+                </button>
+
+                <button class="quick" onclick="go('lockers')">
+                    <span class="qicon">🔐</span>
+                    <span>
+                        <strong>लॉकर बुकिंग</strong>
+                        <small>सामान सुरक्षित रखें</small>
+                    </span>
+                </button>
+
+                <button class="quick" onclick="go('fees')">
+                    <span class="qicon">₹</span>
+                    <span>
+                        <strong>फीस प्लान</strong>
+                        <small>सभी प्लान देखें</small>
+                    </span>
+                </button>
+
+                <button class="quick" onclick="go('login')">
+                    <span class="qicon">👤</span>
+                    <span>
+                        <strong>स्टूडेंट लॉगिन</strong>
+                        <small>प्रोफाइल और हिस्ट्री</small>
+                    </span>
+                </button>
+
+            </div>
+
+            <div class="section-head">
+                <h3>हमारी सुविधाएँ</h3>
+            </div>
+
+            <div class="card">
+                <div class="summary-row">
+                    <span>❄️ शांत और आरामदायक स्टडी स्पेस</span>
+                    <strong>✓</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>🕒 सुबह 6 से रात 10 बजे तक</span>
+                    <strong>✓</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>🔒 वैकल्पिक निजी लॉकर</span>
+                    <strong>✓</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>🧾 बुकिंग विवरण और फीस हिसाब</span>
+                    <strong>✓</strong>
+                </div>
+            </div>
+
+            <div class="library-note">
+                <div class="note-heading">NOTE :</div>
+
+                <ul class="note-list">
+                    <li>
+                        पेमेंट एक बार में करना होगा
+                        (ONE TIME PAYMENT).
+                    </li>
+
+                    <li>
+                        1 महीने से अधिक के सब्सक्रिप्शन में
+                        शिफ्टिंग डेट बदलने की सुविधा नहीं है।
+                    </li>
+
+                    <li>
+                        सिक्योरिटी डिपॉजिट ₹300 (रिफंडेबल) है।
+                    </li>
+
+                    <li>
+                        लॉकर शुल्क ₹100 प्रति महीने अतिरिक्त है।
+                    </li>
+
+                    <li>
+                        1 महीने के प्लान को रजिस्ट्रेशन के
+                        10 दिनों के भीतर अपग्रेड किया जा सकता है
+                        (1 महीने से अधिक के प्लान में)।
+                    </li>
+
+                    <li>
+                        किसी भी परिस्थिति में सब्सक्रिप्शन फीस
+                        वापस नहीं होगी।
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- BOOKS PAGE -->
+        <section class="page" id="books">
+
+            <h2 class="page-title">📚 हमारी किताबें</h2>
+
+            <p class="page-sub">
+                Vidya Library में उपलब्ध किताबों की सूची देखें।
+            </p>
+
+            <div class="card">
+
+                <div class="book-stat-grid">
+
+                    <div class="book-stat">
+                        <strong id="totalBooks">0</strong>
+                        <span>किताबों के प्रकार</span>
+                    </div>
+
+                    <div class="book-stat">
+                        <strong id="totalCopies">0</strong>
+                        <span>कुल किताबें</span>
+                    </div>
+
+                </div>
+
+                <div class="field">
+                    <label for="bookSearch">किताब खोजें</label>
+
+                    <input
+                        type="search"
+                        id="bookSearch"
+                        placeholder="किताब का नाम लिखें..."
+                        oninput="searchBooks()"
+                    >
+                </div>
+
+                <p id="bookResults" class="small muted">
+                    किताबों की सूची लोड हो रही है।
+                </p>
+
+            </div>
+
+            <div class="card">
+                <div class="section-head">
+                    <h3>उपलब्ध किताबों की सूची</h3>
+                </div>
+
+                <div id="booksGrid" class="books-grid"></div>
+            </div>
+
+        </section>
+
+        <!-- LOGIN PAGE -->
+        <section class="page" id="login">
+
+            <h2 class="page-title">स्टूडेंट अकाउंट</h2>
+
+            <p class="page-sub">
+                Google Account से लॉगिन करके अपनी बुकिंग की जानकारी देखें।
+            </p>
+
+            <div class="card">
+
+                <div class="form-row">
+                    <button
+                        id="loginTab"
+                        class="btn btn-primary"
+                        type="button"
+                        onclick="setAuthMode('login')">
+                        लॉगिन
+                    </button>
+
+                    <button
+                        id="registerTab"
+                        class="btn btn-outline"
+                        type="button"
+                        onclick="setAuthMode('register')">
+                        नया रजिस्ट्रेशन
+                    </button>
+                </div>
+
+                <form id="authForm">
+
+                    <div class="field" id="authNameWrap">
+                        <label for="authName">पूरा नाम</label>
+                        <input
+                            id="authName"
+                            placeholder="अपना पूरा नाम लिखें"
+                            autocomplete="name">
+                    </div>
+
+                    <div class="field">
+                        <label for="authPhone">मोबाइल नंबर</label>
+                        <input
+                            id="authPhone"
+                            inputmode="numeric"
+                            maxlength="10"
+                            pattern="[6-9][0-9]{9}"
+                            placeholder="10 अंकों का मोबाइल नंबर">
+                    </div>
+
+                    <div class="field">
+                        <label for="authPassword">पासवर्ड</label>
+                        <input
+                            id="authPassword"
+                            type="password"
+                            placeholder="कम से कम 6 अक्षर"
+                            minlength="6">
+                    </div>
+
+                    <button
+                        class="btn btn-primary full"
+                        id="authSubmit"
+                        type="submit">
+                        लॉगिन करें
+                    </button>
+
+                </form>
+
+                <p class="secure-note">
+                    अभी Google Login उपलब्ध है।
+                    Email/Password Login अलग से सक्रिय नहीं है।
+                </p>
+
+                <button
+                    class="link-btn"
+                    type="button"
+                    onclick="go('booking')">
+                    बुकिंग पेज देखें →
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- SEAT BOOKING PAGE -->
+        <section class="page" id="booking">
+
+            <h2 class="page-title">सीट बुकिंग</h2>
+
+            <p class="page-sub">
+                हरी सीट उपलब्ध है, लाल सीट आरक्षित है।
+                अपनी सीट चुनें।
+            </p>
+
+            <div class="card">
+
+                <div class="section-head section-head-top">
+                    <h3>सीट प्लान</h3>
+                    <small>कुल 80 सीटें</small>
+                </div>
+
+                <div class="seat-legend">
+                    <span><i class="dot available-dot"></i>उपलब्ध</span>
+                    <span><i class="dot reserved-dot"></i>आरक्षित</span>
+                    <span><i class="dot selected-dot"></i>आपकी पसंद</span>
+                </div>
+
+                <div class="seat-grid" id="seatGrid"></div>
+
+                <div class="seat-note" id="seatMessage">
+                    अभी कोई सीट नहीं चुनी गई है।
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="form-row">
+
+                    <div class="field">
+                        <label for="slot">समय प्लान</label>
+
+                        <select id="slot">
+                            <option value="4">4 घंटे</option>
+                            <option value="6">6 घंटे</option>
+                            <option value="8">8 घंटे</option>
+                            <option value="Full Time">
+                                Full Time (6 AM–10 PM)
+                            </option>
+                            <option value="Reserved">
+                                Reserved (6 AM–10 PM)
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="months">अवधि</label>
+
+                        <select id="months">
+                            <option value="1">1 महीना</option>
+                            <option value="2">2 महीने</option>
+                            <option value="3">3 महीने</option>
+                            <option value="6">6 महीने</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="field">
+                    <label for="startDate">शुरू करने की तारीख</label>
+                    <input id="startDate" type="date" required>
+                </div>
+
+                <div class="field">
+                    <label for="studentName">स्टूडेंट का नाम</label>
+                    <input
+                        id="studentName"
+                        placeholder="पूरा नाम"
+                        autocomplete="name"
+                        required>
+                </div>
+
+                <div class="field">
+                    <label for="studentPhone">मोबाइल नंबर</label>
+                    <input
+                        id="studentPhone"
+                        inputmode="numeric"
+                        maxlength="10"
+                        pattern="[6-9][0-9]{9}"
+                        placeholder="10 अंकों का मोबाइल नंबर"
+                        required>
+                </div>
+
+                <button
+                    class="btn btn-primary full"
+                    type="button"
+                    onclick="go('fees')">
+                    फीस देखें और आगे बढ़ें →
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- FEES PAGE -->
+        <section class="page" id="fees">
+
+            <h2 class="page-title">फीस प्लान</h2>
+
+            <p class="page-sub">
+                अपनी पढ़ाई के समय और अवधि के अनुसार प्लान चुनें।
+            </p>
+
+            <div class="card">
+
+                <div class="section-head section-head-top">
+                    <h3>मासिक फीस सूची</h3>
+                </div>
+
+                <div class="fee-table-wrap">
+
+                    <table class="fee-table">
+
+                        <thead>
+                            <tr>
+                                <th>प्लान</th>
+                                <th>1 माह</th>
+                                <th>2 माह</th>
+                                <th>3 माह</th>
+                                <th>6 माह</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>4 घंटे</td>
+                                <td>₹500</td>
+                                <td>₹800</td>
+                                <td>₹1,200</td>
+                                <td>₹2,400*</td>
+                            </tr>
+
+                            <tr>
+                                <td>6 घंटे</td>
+                                <td>₹700</td>
+                                <td>₹1,200</td>
+                                <td>₹1,800</td>
+                                <td>₹3,200</td>
+                            </tr>
+
+                            <tr>
+                                <td>8 घंटे</td>
+                                <td>₹900</td>
+                                <td>₹1,600</td>
+                                <td>₹2,200</td>
+                                <td>₹4,000</td>
+                            </tr>
+
+                            <tr>
+                                <td>Full Time</td>
+                                <td>₹1,000</td>
+                                <td>₹1,800</td>
+                                <td>₹2,500</td>
+                                <td>₹4,500</td>
+                            </tr>
+
+                            <tr>
+                                <td>Reserved</td>
+                                <td>₹1,200</td>
+                                <td>₹2,200</td>
+                                <td>₹3,200</td>
+                                <td>₹5,500</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <p class="small muted">
+                    * 4 घंटे के 6 महीने वाले प्लान पर 4+2 महीने ऑफर।
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <div class="section-head section-head-top">
+                    <h3>आपकी बुकिंग का अनुमान</h3>
+                    <small>फीस कैलकुलेशन</small>
+                </div>
+
+                <div class="summary-row">
+                    <span>सीट</span>
+                    <strong id="sumSeat">चुनी नहीं</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>समय प्लान</span>
+                    <strong id="sumSlot">4 घंटे</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>अवधि</span>
+                    <strong id="sumMonths">1 महीना</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>सीट फीस</span>
+                    <strong id="sumFee">₹500</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>लॉकर फीस</span>
+                    <strong id="sumLocker">₹0</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>रिफंडेबल सिक्योरिटी डिपॉजिट</span>
+                    <strong id="sumDeposit">₹300</strong>
+                </div>
+
+                <div class="summary-row summary-total">
+                    <span>कुल अनुमानित राशि</span>
+                    <strong id="sumTotal">₹800</strong>
+                </div>
+
+                <p class="secure-note">
+                    डिपॉजिट की अंतिम पात्रता Admin द्वारा सत्यापित होगी।
+                </p>
+
+                <button
+                    class="btn btn-primary full"
+                    type="button"
+                    onclick="prepareBooking()">
+                    बुकिंग विवरण तैयार करें
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <h3 class="card-heading">भुगतान</h3>
+
+                <div class="field">
+                    <label for="payMethod">भुगतान का तरीका</label>
+
+                    <select id="payMethod">
+                        <option value="UPI">UPI / Google Pay / PhonePe</option>
+                        <option value="cash">नकद लाइब्रेरी काउंटर पर</option>
+                    </select>
+                </div>
+
+                <p class="secure-note">
+                    UPI भुगतान करने के बाद UTR जमा करें।
+                    भुगतान Admin द्वारा जाँचने के बाद ही Confirm होगा।
+                </p>
+
+            </div>
+
+            <!-- PAYMENT AREA -->
+            <div class="card" id="paymentArea" hidden></div>
+
+        </section>
+
+        <!-- LOCKER PAGE -->
+        <section class="page" id="lockers">
+
+            <h2 class="page-title">लॉकर बुकिंग</h2>
+
+            <p class="page-sub">
+                अपना सामान सुरक्षित रखने के लिए उपलब्ध लॉकर चुनें।
+                फीस ₹100 प्रति महीना।
+            </p>
+
+            <div class="card">
+
+                <div class="section-head section-head-top">
+                    <h3>लॉकर प्लान</h3>
+                    <small>कुल 24 लॉकर</small>
+                </div>
+
+                <div class="seat-legend">
+                    <span><i class="dot available-dot"></i> उपलब्ध</span>
+                    <span><i class="dot reserved-dot"></i> आरक्षित</span>
+                    <span><i class="dot selected-dot"></i> चुना गया</span>
+                </div>
+
+                <div class="locker-grid" id="lockerGrid"></div>
+
+                <div class="summary-row locker-choice-row">
+                    <span>चुना गया लॉकर</span>
+                    <strong id="lockerChoice">कोई नहीं</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>लॉकर फीस</span>
+                    <strong id="lockerPrice">₹0</strong>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="section-head">
+                    <h3>विद्यार्थी की जानकारी</h3>
+                </div>
+
+                <div class="field">
+                    <label for="lockerStudentName">पूरा नाम</label>
+                    <input
+                        type="text"
+                        id="lockerStudentName"
+                        placeholder="अपना पूरा नाम लिखें">
+                </div>
+
+                <div class="field">
+                    <label for="lockerStudentPhone">मोबाइल नंबर</label>
+                    <input
+                        type="tel"
+                        id="lockerStudentPhone"
+                        inputmode="numeric"
+                        maxlength="10"
+                        placeholder="10 अंकों का मोबाइल नंबर">
+                </div>
+
+                <div class="field">
+                    <label for="lockerStartDate">
+                        लॉकर शुरू करने की तारीख
+                    </label>
+
+                    <input type="date" id="lockerStartDate">
+                </div>
+
+                <div class="field">
+                    <label for="lockerMonths">लॉकर की अवधि</label>
+
+                    <select id="lockerMonths">
+                        <option value="1">1 महीना</option>
+                        <option value="2">2 महीने</option>
+                        <option value="3">3 महीने</option>
+                        <option value="6">6 महीने</option>
+                    </select>
+                </div>
+
+                <button
+                    class="btn btn-primary full locker-save"
+                    type="button"
+                    onclick="saveLocker()">
+                    लॉकर बुक करें
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- PROFILE PAGE -->
+        <section class="page" id="profile">
+
+            <h2 class="page-title">मेरी प्रोफाइल</h2>
+
+            <p class="page-sub">
+                अपनी जानकारी और बुकिंग हिस्ट्री यहाँ देखें।
+            </p>
+
+            <div class="card">
+
+                <div class="profile-head">
+
+                    <div class="avatar" id="profileAvatar">वि</div>
+
+                    <div>
+                        <h3 id="profileName">अतिथि विद्यार्थी</h3>
+                        <p id="profilePhone">अभी लॉगिन नहीं किया</p>
+                    </div>
+
+                </div>
+
+                <div class="separator"></div>
+
+                <div class="summary-row">
+                    <span>अकाउंट स्थिति</span>
+                    <strong id="profileStatus">डेमो</strong>
+                </div>
+
+                <button
+                    class="btn btn-outline full profile-login"
+                    type="button"
+                    onclick="go('login')">
+                    लॉगिन / रजिस्ट्रेशन
+                </button>
+
+                <button
+                    class="btn btn-outline full"
+                    type="button"
+                    onclick="logout()">
+                    Logout
+                </button>
+
+            </div>
+
+            <div class="section-head">
+                <h3>बुकिंग हिस्ट्री</h3>
+                <small>आपकी बुकिंग</small>
+            </div>
+
+            <div class="card" id="historyList">
+                <div class="empty">अभी कोई बुकिंग नहीं है।</div>
+            </div>
+
+            <button
+                class="btn btn-outline full"
+                type="button"
+                onclick="clearDemoData()">
+                डेमो हिस्ट्री साफ करें
+            </button>
+
+        </section>
+
+    </main>
+
+    <!-- LIBRARY ADDRESS -->
+    <section class="visit-section" aria-labelledby="visitTitle">
+
+        <div class="visit-card">
+
+            <div class="visit-header">
+
+                <div class="visit-header-top">
+                    <span class="visit-eyebrow">
+                        आपकी पढ़ाई का नया पता
+                    </span>
+
+                    <span class="visit-location-tag">
+                        📍 राजनांदगांव
+                    </span>
+                </div>
+
+                <h2 id="visitTitle">मिलते हैं लाइब्रेरी में!</h2>
+
+                <p>
+                    एक बेहतर स्टडी रूटीन की शुरुआत,
+                    विद्या लाइब्रेरी के साथ।
+                </p>
+
+                <div class="visit-brand">
+                    <span class="visit-brand-icon">📚</span>
+
+                    <div>
+                        <strong>विद्या लाइब्रेरी</strong>
+                        <span>THE STUDY ZONE</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="visit-body">
+
+                <div class="visit-address-row">
+
+                    <div class="visit-pin">📍</div>
+
+                    <div class="visit-address-copy">
+
+                        <span class="visit-small-label">हमारा पता</span>
+
+                        <h3>Shiv Tower, 1st Floor</h3>
+
+                        <p>
+                            Near Digvijay College,<br>
+                            In front of Durga Mandir,<br>
+                            Rajnandgaon, Chhattisgarh
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="visit-landmark">
+                    <span>🧭</span>
+
+                    <p>
+                        <strong>आसानी से पहचानें</strong>
+                        दुर्गा मंदिर के सामने, दिग्विजय कॉलेज के पास
+                    </p>
+                </div>
+
+                <div class="visit-hours">
+
+                    <div class="visit-hours-icon">🕒</div>
+
+                    <div class="visit-hours-copy">
+                        <span>लाइब्रेरी का समय</span>
+                        <strong>सुबह 6:00 – रात 10:00</strong>
+                    </div>
+
+                    <span class="visit-duration">16 घंटे</span>
+
+                </div>
+
+                <div class="visit-actions">
+
+                    <a
+                        class="visit-map-btn"
+                        href="https://maps.app.goo.gl/jAtXQrTZQzAHmzzc6?g_st=ac"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <span>↗</span>
+                        रास्ता देखें
+                    </a>
+
+                    <button
+                        class="visit-seat-btn"
+                        type="button"
+                        onclick="go('booking')">
+                        <span>💺</span>
+                        सीट चुनें
+                    </button>
+
+                </div>
+
+                <p class="visit-footnote">
+                    अपनी तैयारी को दें एक तय जगह।
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- BOTTOM NAVIGATION -->
+    <nav class="bottom-nav" aria-label="मुख्य नेविगेशन">
+
+        <button
+            class="nav-item active"
+            data-page="home"
+            onclick="go('home')">
+            <span>⌂</span>होम
+        </button>
+
+        <button
+            class="nav-item"
+            data-page="booking"
+            onclick="go('booking')">
+            <span>💺</span>सीट
+        </button>
+
+        <button
+            class="nav-item"
+            data-page="fees"
+            onclick="go('fees')">
+            <span>₹</span>फीस
+        </button>
+
+        <button
+            class="nav-item"
+            data-page="lockers"
+            onclick="go('lockers')">
+            <span>🔐</span>लॉकर
+        </button>
+
+        <button
+            class="nav-item"
+            data-page="profile"
+            onclick="go('profile')">
+            <span>👤</span>प्रोफाइल
+        </button>
+
+    </nav>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</div>
+
+<script type="module" src="./Vidya-Library.js"></script>
+
+</body>
+</html>
